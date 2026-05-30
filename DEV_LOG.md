@@ -2,7 +2,25 @@
 
 ## TL;DR
 
-內容遷移完成，網站可在本地正常預覽。**目前阻塞點：尚未建立 GitHub repo，無法上線。** 所有表格已轉為 HTML `<table>` 語法，校稿與圖片補充完成。下一步：建立 GitHub repo 上線。
+網站已正式上線：**https://kopulin.github.io/tccc-notes/**。內容持續更新中，push 後約 35 秒自動部署。
+
+---
+
+## [2026-05-30] Session｜網站部署上線、內容持續編修
+
+### 完成項目
+- **網站正式部署上線**：https://kopulin.github.io/tccc-notes/
+- **GitHub repo 重建**：原本 git init 在錯誤的上層資料夾（Projects/），重新在 `tccc-notes/` 內建立獨立 repo 並 push
+- **修正圖片路徑錯誤**：`10-antibiotics.md` 的圖片路徑從 `/tccc-notes/images/` 修正為 `/images/`
+- **內容編修**：`11-wound.md` 新增傷口敷料選擇章節（泡棉、海藻膠、人工皮、水凝膠、銀離子、麥盧卡蜂蜜）
+- **`10-antibiotics.md`** 抗生素章節重新整理為閱讀式格式，補充比較表格
+
+### 圖片路徑規則（重要）
+- ✅ 正確：`/images/檔名.xxx`
+- ❌ 錯誤：`/tccc-notes/images/檔名.xxx`（只有 config.ts 的 base 才加 `/tccc-notes/`）
+
+### 部署流程（已建立）
+每次編修後：commit → 我用指令 push → Actions 自動部署（約 35 秒）
 
 ---
 
@@ -67,8 +85,8 @@
 | 所有表格轉 HTML 語法 | ✅ 完成 | 12 檔、22 張，含 colgroup 欄寬設定 |
 | md 文字校稿 | ✅ 完成 | 對照 Notion 原版逐章校對 |
 | 圖片補充 | ✅ 完成 | 各章節插圖已加入並更新路徑 |
-| GitHub repo 建立 | ⬜ 待執行 | 需要手動在 GitHub 建立 |
-| 首次部署 | ⬜ 待執行 | 建立 repo 後執行 |
+| GitHub repo 建立 | ✅ 完成 | https://github.com/kopulin/tccc-notes |
+| 首次部署 | ✅ 完成 | https://kopulin.github.io/tccc-notes/ |
 
 ---
 
