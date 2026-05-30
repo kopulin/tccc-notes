@@ -173,7 +173,7 @@ tags: [抗生素, 感染控制, 頭孢菌素, 過敏性休克, 藥物劑量]
 - **Epinephrine IM 肌肉注射**，這是唯一處理的手段
 - 斜靠、半坐臥姿勢
 
-![皮膚過敏反應示意圖](/tccc-notes/images/dermanaphylaxi.webp)
+![皮膚過敏反應示意圖](/images/dermanaphylaxi.webp)
 
 <table>
   <colgroup>
