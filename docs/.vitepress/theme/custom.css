@@ -1,0 +1,238 @@
+/* ══════════════════════════════════════════════════════
+   IBM Carbon Design System — VitePress Theme Override
+   PRD §2 視覺方向 / §6 UI 規範
+   ══════════════════════════════════════════════════════ */
+
+/* ── 字體 ── */
+:root {
+  --vp-font-family-base:
+    'IBM Plex Sans', -apple-system, BlinkMacSystemFont,
+    'PingFang TC', 'Microsoft JhengHei', 'Noto Sans TC', sans-serif;
+  --vp-font-family-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+/* ── Light Mode 色彩 ── */
+:root {
+  --vp-c-brand-1:    #0f62fe;  /* IBM Blue */
+  --vp-c-brand-2:    #0043ce;
+  --vp-c-brand-3:    #002d9c;
+  --vp-c-brand-soft: rgba(15, 98, 254, 0.10);
+
+  --vp-c-bg:         #ffffff;
+  --vp-c-bg-soft:    #f8f8f8;  /* Surface-1 */
+  --vp-c-bg-mute:    #e0e0e0;
+
+  --vp-c-text-1:     #161616;  /* Ink */
+  --vp-c-text-2:     #525252;  /* Ink Muted */
+  --vp-c-text-3:     #8c8c8c;
+
+  --vp-c-divider:    #e0e0e0;  /* Hairline */
+  --vp-c-border:     #e0e0e0;
+}
+
+/* ── Dark Mode 色彩 ── */
+.dark {
+  --vp-c-brand-1:    #4589ff;  /* Blue-40 */
+  --vp-c-brand-2:    #0f62fe;
+  --vp-c-brand-soft: rgba(69, 137, 255, 0.12);
+
+  --vp-c-bg:         #161616;  /* Gray-100 */
+  --vp-c-bg-soft:    #262626;  /* Gray-90 */
+  --vp-c-bg-mute:    #393939;
+
+  --vp-c-text-1:     #f4f4f4;
+  --vp-c-text-2:     #c6c6c6;  /* Gray-30 */
+  --vp-c-text-3:     #6f6f6f;
+
+  --vp-c-divider:    #393939;
+  --vp-c-border:     #393939;
+}
+
+/* ── Carbon Letter-spacing ── */
+body {
+  letter-spacing: 0.16px;
+}
+
+/* ── 方角（覆蓋 VitePress 預設圓角）── */
+:root {
+  --vp-border-radius:       0px;
+  --vp-input-border-radius: 0px;
+}
+
+.VPButton,
+.VPNavBarSearch .DocSearch-Button,
+.vp-doc code,
+.vp-doc pre {
+  border-radius: 0 !important;
+}
+
+/* ── Search input：Carbon 底線 focus 風格 ── */
+.VPNavBarSearchButton:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 0;
+}
+
+/* ── Sidebar active item：左側 accent line ── */
+.VPSidebarItem.is-active > .item > .VPLink {
+  border-left: 3px solid var(--vp-c-brand-1);
+  padding-left: 13px !important;
+  color: var(--vp-c-text-1) !important;
+}
+
+/* ── 標題字重 Carbon 風格 ── */
+.vp-doc h1 { font-weight: 400; }
+.vp-doc h2 { font-weight: 400; }
+.vp-doc h3 { font-weight: 600; }
+
+/* ── Draft banner（在 status: draft 頁面使用）──
+   用法：在 md 檔頁面頂部加入
+   <div class="draft-banner">⚠️ 本章內容為草稿，尚未完整審閱</div>
+   ── */
+.draft-banner {
+  background: #f1c21b;
+  color: #161616;
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ── Callout 區塊 ──
+   用法：::: tip / ::: warning / ::: danger
+   ── */
+.vp-doc .custom-block.tip    { border-left-color: var(--vp-c-brand-1); }
+.vp-doc .custom-block.warning { border-left-color: #f1c21b; }
+.vp-doc .custom-block.danger  { border-left-color: #da1e28; }
+
+/* ── Table 樣式 ── */
+.vp-doc table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: table !important;
+  table-layout: fixed;
+  border: none !important;
+}
+
+.vp-doc th {
+  background: transparent !important;
+  font-size: 12px;
+  font-weight: 600;
+  border: none !important;
+  border-bottom: 0.5px solid var(--vp-c-divider) !important;
+  border-top: none !important;
+  padding: 8px 12px;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+/* header 整列上方不要線 */
+.vp-doc thead tr {
+  border-top: none !important;
+  background: transparent !important;
+}
+
+.vp-doc td {
+  background: transparent !important;
+  font-size: 14px;
+  border: none !important;
+  border-bottom: 0.5px solid var(--vp-c-divider) !important;
+  padding: 8px 12px;
+  word-break: break-word;
+  vertical-align: top;
+}
+
+/* 移除斑馬紋底色 */
+.vp-doc tr {
+  background: transparent !important;
+}
+
+/* 最後一行不要底線 */
+.vp-doc tr:last-child td {
+  border-bottom: none !important;
+}
+
+/* ── Link Card (Bookmark) ── */
+.link-card {
+  display: block;
+  border: 0.5px solid var(--vp-c-divider);
+  padding: 14px 16px;
+  margin: 16px 0;
+  text-decoration: none !important;
+  color: inherit;
+  transition: background 150ms ease;
+}
+
+.link-card:hover {
+  background: var(--vp-c-bg-soft);
+}
+
+.link-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+  margin-bottom: 4px;
+}
+
+.link-card-desc {
+  font-size: 12px;
+  color: var(--vp-c-text-2);
+  margin-bottom: 8px;
+}
+
+.link-card-url {
+  font-size: 11px;
+  color: var(--vp-c-text-3);
+}
+
+/* ── Figure & Caption ── */
+.vp-doc figure {
+  margin: 24px 0;
+}
+
+.vp-doc figcaption {
+  font-size: 12px;
+  color: var(--vp-c-text-3);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ── Triage color dots ── */
+.triage-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+.triage-dot.red    { background: #da1e28; }
+.triage-dot.yellow { background: #f1c21b; }
+.triage-dot.green  { background: #24a148; }
+.triage-dot.gray   { background: #c6c6c6; border: 1px solid #a8a8a8; }
+.triage-dot.black  { background: #161616; }
+
+.dark .triage-dot.gray  { background: #6f6f6f; border-color: #525252; }
+.dark .triage-dot.black { background: #f4f4f4; }
+
+/* ── Feature card icons ── */
+.VPFeature .box img {
+  width: 40px;
+  height: 40px;
+}
+
+.dark .VPFeature .box img {
+  filter: brightness(0) invert(0.96);
+}
+
+/* ── Footer ── */
+.VPFooter {
+  background: #161616 !important;
+  border-top: 1px solid #393939 !important;
+}
+.VPFooter .message,
+.VPFooter .copyright {
+  color: #c6c6c6 !important;
+  font-size: 12px;
+}

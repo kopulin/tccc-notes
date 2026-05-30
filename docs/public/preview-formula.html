@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formula Style Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'IBM Plex Sans', -apple-system, 'PingFang TC', sans-serif;
+      font-size: 15px;
+      letter-spacing: 0.16px;
+    }
+
+    .row {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .panel {
+      flex: 1;
+      padding: 40px 32px;
+    }
+
+    /* ── Light ── */
+    .light {
+      background: #ffffff;
+      color: #161616;
+    }
+
+    /* ── Dark ── */
+    .dark {
+      background: #161616;
+      color: #f4f4f4;
+    }
+
+    .mode-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #8c8c8c;
+      margin-bottom: 32px;
+    }
+
+    .dark .mode-label { color: #6f6f6f; }
+
+    h2 {
+      font-size: 13px;
+      font-weight: 600;
+      color: #525252;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin: 36px 0 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .dark h2 {
+      color: #6f6f6f;
+      border-bottom-color: #393939;
+    }
+    h2:first-of-type { margin-top: 0; }
+
+    /* ────────────────────────────
+       Option A：Code Block
+    ──────────────────────────── */
+    .code-block {
+      background: #f4f4f4;
+      border-left: 3px solid #e0e0e0;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      font-family: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+      font-size: 13px;
+      line-height: 1.7;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: #161616;
+    }
+    .dark .code-block {
+      background: #262626;
+      border-left-color: #393939;
+      color: #f4f4f4;
+    }
+    .code-block .label {
+      font-weight: 600;
+      color: #0f62fe;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .dark .code-block .label {
+      color: #4589ff;
+    }
+    .code-block .warn {
+      color: #f1c21b;
+      font-size: 12px;
+    }
+
+    /* ────────────────────────────
+       Option B：Callout Container
+    ──────────────────────────── */
+    .callout {
+      border-left: 3px solid;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+    .callout-title {
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .callout-body {
+      font-size: 14px;
+      color: #525252;
+    }
+    .dark .callout-body { color: #c6c6c6; }
+
+    .callout.info {
+      border-color: #0f62fe;
+      background: rgba(15, 98, 254, 0.05);
+    }
+    .dark .callout.info {
+      border-color: #4589ff;
+      background: rgba(69, 137, 255, 0.08);
+    }
+    .callout.info .callout-title { color: #0f62fe; }
+    .dark .callout.info .callout-title { color: #4589ff; }
+
+    .callout.warning {
+      border-color: #f1c21b;
+      background: rgba(241, 194, 27, 0.06);
+    }
+    .callout.warning .callout-title { color: #b28600; }
+    .dark .callout.warning .callout-title { color: #f1c21b; }
+
+    /* divider */
+    .divider {
+      width: 1px;
+      background: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+
+    <!-- Light Mode -->
+    <div class="panel light">
+      <div class="mode-label">Light Mode</div>
+
+      <h2>Option A — Code Block</h2>
+
+      <div class="code-block"><span class="label">ATLS</span>公式：2 ml × 體重(kg) × TBSA(%) = 24 hr 總量
+給法：前 8 hr 給一半，後 16 hr 給一半
+特例：電燒傷係數改 4 ml</div>
+
+      <div class="code-block"><span class="label">Rule of Ten  <span class="warn">⚠ 僅適用 40–80 kg 成年男性</span></span>公式：TBSA(%) × 10 = 初始流速（ml/hr）
+追加：每超過 10 kg 再 + 100 ml/hr</div>
+
+      <h2>Option B — Callout Block</h2>
+
+      <div class="callout info">
+        <div class="callout-title">ATLS</div>
+        <div class="callout-body">
+          2 ml × 體重(kg) × TBSA(%) = 24 hr 總量<br>
+          前 8 hr 給一半，後 16 hr 給一半；電燒傷係數改 4 ml
+        </div>
+      </div>
+
+      <div class="callout warning">
+        <div class="callout-title">Rule of Ten　⚠ 僅適用 40–80 kg 成年男性</div>
+        <div class="callout-body">
+          TBSA(%) × 10 = 初始流速（ml/hr）<br>
+          每超過 10 kg 再 + 100 ml/hr
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Dark Mode -->
+    <div class="panel dark">
+      <div class="mode-label">Dark Mode</div>
+
+      <h2>Option A — Code Block</h2>
+
+      <div class="code-block"><span class="label">ATLS</span>公式：2 ml × 體重(kg) × TBSA(%) = 24 hr 總量
+給法：前 8 hr 給一半，後 16 hr 給一半
+特例：電燒傷係數改 4 ml</div>
+
+      <div class="code-block"><span class="label">Rule of Ten  <span class="warn">⚠ 僅適用 40–80 kg 成年男性</span></span>公式：TBSA(%) × 10 = 初始流速（ml/hr）
+追加：每超過 10 kg 再 + 100 ml/hr</div>
+
+      <h2>Option B — Callout Block</h2>
+
+      <div class="callout info">
+        <div class="callout-title">ATLS</div>
+        <div class="callout-body">
+          2 ml × 體重(kg) × TBSA(%) = 24 hr 總量<br>
+          前 8 hr 給一半，後 16 hr 給一半；電燒傷係數改 4 ml
+        </div>
+      </div>
+
+      <div class="callout warning">
+        <div class="callout-title">Rule of Ten　⚠ 僅適用 40–80 kg 成年男性</div>
+        <div class="callout-body">
+          TBSA(%) × 10 = 初始流速（ml/hr）<br>
+          每超過 10 kg 再 + 100 ml/hr
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
