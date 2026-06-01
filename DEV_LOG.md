@@ -4,6 +4,8 @@
 
 網站已正式上線：**https://kopulin.github.io/tccc-notes/**。內容持續更新中，push 後約 35 秒自動部署。本機 git 環境已重設完畢，`tccc-notes` 為獨立 repo，remote 指向 `kopulin/tccc-notes.git`。
 
+新增「內科急症 / 延伸照護」群組（Ch.18–23），骨架已建立，**文字內容交由 Gemini 撰寫，圖片交由 ChatGPT 製作，Claude Code 負責寫入與技術調整**。
+
 ---
 
 ## [2026-05-30] Session｜網站部署上線、內容持續編修
@@ -212,28 +214,32 @@ git push -u origin main
 
 ---
 
-## AI 工作分工建議（省 token 策略）
+## AI 工作分工（省 token 策略）
 
-內容遷移是最耗 token 的任務（要讀大檔、寫多檔）。建議用兩個 AI 分工：
-
-### 外包給 Gemini 的任務
-| 任務 | 做法 |
+### 分工總覽
+| AI | 負責任務 |
 |------|------|
-| 內容遷移 | 把 `tccc-reference.md` 全文貼給 Gemini，請它按章節拆成 17 份 md 內容（只輸出文字，不建立檔案） |
-| 章節 description | 請 Gemini 根據內容為每章寫一行簡介（用於 frontmatter 與首頁卡片） |
-| Tags 關鍵字 | 請 Gemini 從每章內容提取搜尋關鍵字，填入 frontmatter `tags` |
+| **Gemini** | 章節文字內容撰寫（貼骨架 → 請它填內容，只輸出文字） |
+| **ChatGPT** | 章節插圖製作（解剖圖、流程圖、示意圖） |
+| **Claude Code** | 檔案寫入、`config.ts` 調整、CSS 修改、部署除錯 |
 
-### 保留給 Claude Code 的任務
+### Gemini 文字流程
+1. 把對應的 `.md` 骨架貼給 Gemini，請它填寫各段落內容（只輸出 md 文字，不建立檔案）
+2. 確認內容後，告訴 Claude Code：「這是 Ch.XX 的內容，寫入 `docs/chapters/XX.md`，status 改 published」
+3. Claude Code 只做寫入，token 消耗極少
+
+### ChatGPT 圖片流程
+1. 描述需要的圖（解剖位置、流程步驟等），請 ChatGPT 產圖
+2. 下載後放入 `docs/public/images/`
+3. 告訴 Claude Code 更新對應 `.md` 的圖片路徑
+
+### Claude Code 保留任務
 | 任務 | 原因 |
 |------|------|
-| 寫入 / 更新檔案 | 需要直接操作專案資料夾 |
+| 寫入 / 更新 `.md` 檔 | 需要直接操作專案資料夾 |
 | `config.ts`、CSS 調整 | 需要讀現有程式碼才能正確修改 |
+| sidebar 順序調整 | 同上 |
 | 部署除錯 | 需要跑指令、看 terminal 輸出 |
-
-### 推薦流程
-1. 用 Gemini 處理好某一章的 md 內容（純文字）
-2. 告訴 Claude Code：「這是第 N 章的內容，寫入 `docs/chapters/XX.md`，移除 draft-banner，status 改 published」
-3. Claude Code 只做寫入，不需讀大檔案，token 消耗極少
 
 ---
 
@@ -248,3 +254,4 @@ git push -u origin main
 | 2026-05-30 | md 文字校稿完成；各章節插圖補充完成；所有表格轉為 HTML `<table>` 語法（22 張）；燒傷公式改為 Callout Block |
 | 2026-05-30 | 網站正式部署上線；GitHub repo 重建（修正原本 git init 在錯誤的上層 Projects/ 資料夾）；修正圖片路徑 |
 | 2026-06-01 | 本機 git 環境重設：tccc-notes 從上層 Projects repo 分離，重新 clone 為獨立 repo，remote 指向 kopulin/tccc-notes.git |
+| 2026-06-01 | 新增「內科急症 / 延伸照護」群組規劃（Ch.18–23）；建立 6 個 draft md 骨架；確立三 AI 分工策略（Gemini 文字、ChatGPT 圖片、Claude Code 寫入） |
