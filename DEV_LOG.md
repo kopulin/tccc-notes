@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-網站已正式上線：**https://kopulin.github.io/tccc-notes/**。內容持續更新中，push 後約 35 秒自動部署。
+網站已正式上線：**https://kopulin.github.io/tccc-notes/**。內容持續更新中，push 後約 35 秒自動部署。本機 git 環境已重設完畢，`tccc-notes` 為獨立 repo，remote 指向 `kopulin/tccc-notes.git`。
 
 ---
 
@@ -95,9 +95,9 @@
 ### 🔴 P0 — 必須完成才能上線
 
 - [x] ~~內容遷移（17 章）~~
-- [ ] **建立 GitHub repo** 並 push 程式碼（見部署步驟）
-- [ ] **設定 GitHub Pages**：Settings → Pages → Source 選 GitHub Actions
-- [ ] **確認 `config.ts` 的 `base`**：改成你的 repo 名稱（目前預設 `/tccc-notes/`）
+- [x] ~~**建立 GitHub repo** 並 push 程式碼~~
+- [x] ~~**設定 GitHub Pages**：Settings → Pages → Source 選 GitHub Actions~~
+- [x] ~~**確認 `config.ts` 的 `base`**：`/tccc-notes/`~~
 
 ### 🟡 P1 — 上線後優化
 
@@ -246,3 +246,5 @@ git push -u origin main
 | 2026-05-27 | 首頁卡片加上 icon（Design System SVG）；圖片路徑修正至 docs/public；亮色卡片調淺至 #f8f8f8；深色 icon 亮度修正 |
 | 2026-05-28 | 開始逐章校對 md 文字（對比 Notion 原版）；進行表格寬度樣式調整；待回家繼續：YouTube 嵌入 & 圖片說明補充 |
 | 2026-05-30 | md 文字校稿完成；各章節插圖補充完成；所有表格轉為 HTML `<table>` 語法（22 張）；燒傷公式改為 Callout Block |
+| 2026-05-30 | 網站正式部署上線；GitHub repo 重建（修正原本 git init 在錯誤的上層 Projects/ 資料夾）；修正圖片路徑 |
+| 2026-06-01 | 本機 git 環境重設：tccc-notes 從上層 Projects repo 分離，重新 clone 為獨立 repo，remote 指向 kopulin/tccc-notes.git |
