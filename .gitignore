@@ -2,3 +2,6 @@ node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
 .DS_Store
+
+# 各專案為獨立 repo，父層不追蹤
+tccc-notes/
