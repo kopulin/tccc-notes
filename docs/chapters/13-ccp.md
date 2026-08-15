@@ -1,7 +1,7 @@
 ---
 title: CCP 開設與撤離
 description: 詳細規範傷患收集點（CCP）的選址原則、空間內部分區配置（紅黃綠黑區）、門口哨兵初步檢傷以及醫事與後送撤離運作流程。
-order: 15
+order: 13
 category: 戰術撤離
 status: published
 tags: [傷患收集點, 空間配置, 哨兵檢傷, 後送撤離, 醫療調度]

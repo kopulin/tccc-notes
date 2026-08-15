@@ -1,8 +1,8 @@
 ---
 title: CPR 心肺復甦術
 description: 闡明創傷引起之 OHCA 在戰術暖區的處置規範，並界定非創傷原因的創傷環境 CPR 適用時機。
-order: 14
-category: 基本觀念
+order: 15
+category: 其他注意事項
 status: published
 tags: [心肺復甦術, 創傷OHCA, 針刺減壓, 適用時機]
 ---

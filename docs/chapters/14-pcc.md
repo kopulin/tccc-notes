@@ -1,7 +1,7 @@
 ---
 title: PCC — 傷患持續照護
 description: 說明延長傷患照護（PCC）的適用時機（後送延遲超過 4 小時），並比較 PCC 與一般 TFC 暖區照護在時間、目標與處置深度上的差異。
-order: 13
+order: 14
 category: 戰術撤離
 status: published
 tags: [延長傷患照護, 戰術野戰照護, 後送延遲, 持續監測]

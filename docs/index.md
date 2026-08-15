@@ -61,18 +61,18 @@ features:
     title: 12｜S — 固定與搬運
     details: 骨折固定、脊椎保護與戰場搬運技術
     link: /chapters/12-splint-transport
-  - icon: { src: '/icons/Casualty.svg' }
-    title: 13｜PCC — 延長傷患照護
-    details: 後送前持續監測與再評估重點
-    link: /chapters/13-pcc
-  - icon: { src: '/icons/CPR.svg' }
-    title: 14｜CPR 心肺復甦術
-    details: CPR 基本處置要點、終止條件與戰術環境的處置觀點
-    link: /chapters/14-cpr
   - icon: { src: '/icons/Ambulance.svg' }
-    title: 15｜CCP 開設與撤離
+    title: 13｜CCP 開設與撤離
     details: 傷患集中處設立標準、運作流程與後送注意事項
-    link: /chapters/15-ccp
+    link: /chapters/13-ccp
+  - icon: { src: '/icons/Casualty.svg' }
+    title: 14｜PCC — 延長傷患照護
+    details: 後送前持續監測與再評估重點
+    link: /chapters/14-pcc
+  - icon: { src: '/icons/CPR.svg' }
+    title: 15｜CPR 心肺復甦術
+    details: CPR 基本處置要點、終止條件與戰術環境的處置觀點
+    link: /chapters/15-cpr
   - icon: { src: '/icons/Document.svg' }
     title: 16｜文件記錄
     details: TCCC Card 填寫規範與傷患資訊記錄要求

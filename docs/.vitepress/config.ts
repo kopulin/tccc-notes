@@ -46,9 +46,14 @@ export default defineConfig({
       {
         text: '後續處置',
         items: [
-          { text: '13｜PCC — 延長傷患照護', link: '/chapters/13-pcc' },
-          { text: '14｜CPR 心肺復甦術', link: '/chapters/14-cpr' },
-          { text: '15｜CCP 開設與撤離', link: '/chapters/15-ccp' },
+          { text: '13｜CCP 開設與撤離', link: '/chapters/13-ccp' },
+          { text: '14｜PCC — 延長傷患照護', link: '/chapters/14-pcc' },
+        ]
+      },
+      {
+        text: '其他注意事項',
+        items: [
+          { text: '15｜CPR 心肺復甦術', link: '/chapters/15-cpr' },
         ]
       },
       {
