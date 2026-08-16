@@ -106,7 +106,7 @@ tags: [休克分類, 輸液策略, 傳明酸, 骨針, 復甦目標]
     <tr><th>類型</th><th>臨床特徵</th><th>處置</th></tr>
   </thead>
   <tbody>
-    <tr><td>張力型氣胸</td><td>呼吸音消失、氣管偏移、患側過度反響音</td><td>NDC / Burp 胸封 → 詳見 <a href="/chapters/06-respiration">06 章</a></td></tr>
+    <tr><td>張力型氣胸</td><td>呼吸音消失、氣管偏移、患側過度反響音</td><td>NDC / Burp 胸封 → 詳見 <a href="/tccc-notes/chapters/06-respiration.html">06 章</a></td></tr>
     <tr><td>心包填塞</td><td>低血壓、心音遙遠、JVD</td><td>TCCC 無法處置（需心包膜穿刺）</td></tr>
     <tr><td>肺栓塞</td><td>突發胸痛、血氧下降、咳血</td><td>高濃度氧氣、抗凝血、升壓藥</td></tr>
   </tbody>

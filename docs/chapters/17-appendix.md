@@ -22,15 +22,15 @@ tags: [MARCH對照表, 縮寫對照, 現場速記, 戰術醫療器材]
     <tr><th>評估階段</th><th>可能傷情</th><th>處置方式</th><th>詳見</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>M — Massive Hemorrhage</strong></td><td>四肢穿刺傷/斷肢、頭頸/腋下/胯下交界處出血、骨盆骨折、內出血（無法處置）</td><td>PACE：止血帶 → 填塞 → 直接加壓 → 徒手加壓</td><td><a href="/chapters/04-massive-bleeding">04 章</a></td></tr>
-    <tr><td><strong>A — Airway</strong></td><td>顏面受損、嘔吐物/血污阻塞、無意識後舌根阻塞、吸入性嗆傷</td><td>NPA、復甦姿勢、坐姿前傾、CRIC</td><td><a href="/chapters/05-airway">05 章</a></td></tr>
-    <tr><td><strong>R — Respiratory</strong></td><td>連枷胸、開放型/張力型氣胸、血胸、心包膜填塞（無法處置）</td><td>胸封、針刺減壓、BVM 給氧</td><td><a href="/chapters/06-respiration">06 章</a></td></tr>
-    <tr><td><strong>C — Circulation</strong></td><td>低血容性休克、阻塞性休克（張力性氣胸）</td><td>輸液復甦（NS/LR/WB）、維持低血壓（80 mmHg）、IV/IO</td><td><a href="/chapters/07-circulation">07 章</a></td></tr>
-    <tr><td><strong>H — Hypothermia / Head</strong></td><td>TBI、失溫、頭部外傷</td><td>保暖處置、維持 SBP ≥ 90 mmHg（TBI）、眼罩</td><td><a href="/chapters/08-hypothermia-head">08 章</a></td></tr>
-    <tr><td><strong>P — Pain Management</strong></td><td>輕中度（可維持戰鬥力）、重度（需繳械）</td><td>Meloxicam/Acetaminophen、Fentanyl、Ketamine</td><td><a href="/chapters/09-pain">09 章</a></td></tr>
-    <tr><td><strong>A — Antibiotics</strong></td><td>視後送時間與傷情決定</td><td>Cefadroxil（PO）、Ceftriaxone（IV/IO）</td><td><a href="/chapters/10-antibiotics">10 章</a></td></tr>
-    <tr><td><strong>W — Wound Management</strong></td><td>所有傷口重新檢查、燒燙傷、臟器外露</td><td>重新檢查包紮、濕紗布覆蓋</td><td><a href="/chapters/11-wound">11 章</a></td></tr>
-    <tr><td><strong>S — Splinting</strong></td><td>四肢骨折、肋骨骨折、骨盆骨折</td><td>軟式護木、彈性繃帶、骨盆固定帶</td><td><a href="/chapters/04-massive-bleeding">04 章</a>（骨盆）／ <a href="/chapters/12-splint-transport">12 章</a>（護木）</td></tr>
+    <tr><td><strong>M — Massive Hemorrhage</strong></td><td>四肢穿刺傷/斷肢、頭頸/腋下/胯下交界處出血、骨盆骨折、內出血（無法處置）</td><td>PACE：止血帶 → 填塞 → 直接加壓 → 徒手加壓</td><td><a href="/tccc-notes/chapters/04-massive-bleeding.html">04 章</a></td></tr>
+    <tr><td><strong>A — Airway</strong></td><td>顏面受損、嘔吐物/血污阻塞、無意識後舌根阻塞、吸入性嗆傷</td><td>NPA、復甦姿勢、坐姿前傾、CRIC</td><td><a href="/tccc-notes/chapters/05-airway.html">05 章</a></td></tr>
+    <tr><td><strong>R — Respiratory</strong></td><td>連枷胸、開放型/張力型氣胸、血胸、心包膜填塞（無法處置）</td><td>胸封、針刺減壓、BVM 給氧</td><td><a href="/tccc-notes/chapters/06-respiration.html">06 章</a></td></tr>
+    <tr><td><strong>C — Circulation</strong></td><td>低血容性休克、阻塞性休克（張力性氣胸）</td><td>輸液復甦（NS/LR/WB）、維持低血壓（80 mmHg）、IV/IO</td><td><a href="/tccc-notes/chapters/07-circulation.html">07 章</a></td></tr>
+    <tr><td><strong>H — Hypothermia / Head</strong></td><td>TBI、失溫、頭部外傷</td><td>保暖處置、維持 SBP ≥ 90 mmHg（TBI）、眼罩</td><td><a href="/tccc-notes/chapters/08-hypothermia-head.html">08 章</a></td></tr>
+    <tr><td><strong>P — Pain Management</strong></td><td>輕中度（可維持戰鬥力）、重度（需繳械）</td><td>Meloxicam/Acetaminophen、Fentanyl、Ketamine</td><td><a href="/tccc-notes/chapters/09-pain.html">09 章</a></td></tr>
+    <tr><td><strong>A — Antibiotics</strong></td><td>視後送時間與傷情決定</td><td>Cefadroxil（PO）、Ceftriaxone（IV/IO）</td><td><a href="/tccc-notes/chapters/10-antibiotics.html">10 章</a></td></tr>
+    <tr><td><strong>W — Wound Management</strong></td><td>所有傷口重新檢查、燒燙傷、臟器外露</td><td>重新檢查包紮、濕紗布覆蓋</td><td><a href="/tccc-notes/chapters/11-wound.html">11 章</a></td></tr>
+    <tr><td><strong>S — Splinting</strong></td><td>四肢骨折、肋骨骨折、骨盆骨折</td><td>軟式護木、彈性繃帶、骨盆固定帶</td><td><a href="/tccc-notes/chapters/04-massive-bleeding.html">04 章</a>（骨盆）／ <a href="/tccc-notes/chapters/12-splint-transport.html">12 章</a>（護木）</td></tr>
   </tbody>
 </table>
 
