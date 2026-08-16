@@ -9,7 +9,7 @@ tags: [熱區, 暖區, 敵火下救護, 戰術野戰照護, 戰術撤離]
 
 # 風險區域與處置時間軸
 
-### 1.4 三個風險區域
+### 2.1 三個風險區域
 
 <table>
   <colgroup>
@@ -29,7 +29,7 @@ tags: [熱區, 暖區, 敵火下救護, 戰術野戰照護, 戰術撤離]
 
 ---
 
-### 1.5 熱區 — CUF（Care Under Fire）
+### 2.2 熱區 — CUF（Care Under Fire）
 
 <figure>
   <img src="/images/cuf-evacuation.png" alt="CUF 撤離示範" />
@@ -66,14 +66,14 @@ tags: [熱區, 暖區, 敵火下救護, 戰術野戰照護, 戰術撤離]
 </a>
 ---
 
-### 1.6 暖區 — TFC（Tactical Field Care）
+### 2.3 暖區 — TFC（Tactical Field Care）
 
 **反應者作為**
 - 識別傷患身份並解除武裝（交付同單位其他人；不留任何裝備/文件/物資給敵方）
 - 考慮在暖區建立 CCP（Casualty Collection Point）
 - 不要因一個救不回來的傷患延誤脫困與後送
 
-**照護處置：完整 MARCH-PAWS** → 詳見第 2 章
+**照護處置：完整 MARCH-PAWS** → 詳見 [17 章附錄｜MARCH-PAWS 評估表](/chapters/17-appendix#_17-1-march-paws-評估表)
 
 > **注意**
 > - 隨時可能變熱區，要有撤離準備計畫
@@ -81,7 +81,7 @@ tags: [熱區, 暖區, 敵火下救護, 戰術野戰照護, 戰術撤離]
 
 ---
 
-### 1.7 撤離 — TACEVAC（前往冷區）
+### 2.4 撤離 — TACEVAC（前往冷區）
 
 **處置作為**
 - 疏散的目的地，通常是醫院或指定醫療站
