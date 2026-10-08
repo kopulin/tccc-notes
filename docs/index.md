@@ -82,3 +82,30 @@ features:
     details: 藥物劑量速查、檢傷標籤說明與快速參考表
     link: /chapters/17-appendix
 ---
+
+## 待更新項目
+
+已知需要修正或補充、但尚未更新進內容的項目。完成後即從清單移除。
+
+<!-- 新增項目：在 tbody 加一列 <tr><td>章節</td><td>要更新的內容</td></tr> -->
+
+<table>
+  <colgroup>
+    <col style="width: 30%" />
+    <col style="width: 70%" />
+  </colgroup>
+  <thead>
+    <tr><th>章節</th><th>待更新內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/tccc-notes/chapters/14-pcc.html">14｜PCC — 延長傷患照護</a></td><td>補充急救站設置注意事項：<br>
+      · 人力編組與輪替運作<br>
+      · 空間配置<br>
+      · 常用藥品與器材<br>
+      · 物資整備：模組化、庫存管理<br>
+      · 個人裝備建議<br>
+      · 撤離計劃</td></tr>
+    <tr><td>新章節</td><td>WFA 野外緊急醫療與急症</td></tr>
+    <tr><td>新章節</td><td>內科急症：腦出血（中風）、主動脈剝離、心肌梗塞</td></tr>
+  </tbody>
+</table>
