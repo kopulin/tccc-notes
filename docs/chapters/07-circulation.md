@@ -170,7 +170,7 @@ tags: [休克分類, 輸液策略, IV管路建立, 傳明酸, 骨針, 復甦目�
   </thead>
   <tbody>
     <tr><td>單純出血性休克</td><td>80 mmHg</td><td>避免血壓過高，沖破Clot</td></tr>
-    <tr><td>合併 TBI</td><td>90 mmHg 或更高</td><td>維持較高血壓，避免腦部缺血</td></tr>
+    <tr><td>合併 TBI</td><td>110 mmHg 以上</td><td>維持較高血壓，避免腦部缺血</td></tr>
   </tbody>
 </table>
 
