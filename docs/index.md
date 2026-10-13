@@ -83,6 +83,37 @@ features:
     link: /chapters/17-appendix
 ---
 
+<script setup>
+import { withBase } from 'vitepress'
+import { changelog } from './.vitepress/changelog'
+
+const latest = [...changelog].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3)
+</script>
+
+## 更新日誌
+
+最近三筆內容更新。
+
+<!-- 新增紀錄：編輯 docs/.vitepress/changelog.ts，首頁只會顯示最新 3 筆 -->
+
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 30%" />
+    <col style="width: 54%" />
+  </colgroup>
+  <thead>
+    <tr><th>日期</th><th>章節</th><th>更新內容</th></tr>
+  </thead>
+  <tbody>
+    <tr v-for="item in latest" :key="item.date + item.content">
+      <td>{{ item.date }}</td>
+      <td><a v-if="item.link" :href="withBase(item.link)">{{ item.chapter }}</a><template v-else>{{ item.chapter }}</template></td>
+      <td>{{ item.content }}</td>
+    </tr>
+  </tbody>
+</table>
+
 ## 待更新項目
 
 已知需要修正或補充、但尚未更新進內容的項目。完成後即從清單移除。

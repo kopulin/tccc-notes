@@ -1,0 +1,19 @@
+// 更新日誌：首頁只顯示日期最新的 3 筆，其餘保留在這裡不顯示
+// 新增紀錄：在陣列最上方加一筆；link 只在對應單一章節時填寫（不含 /tccc-notes/ 前綴）
+
+export interface ChangelogEntry {
+  date: string      // YYYY-MM-DD
+  chapter: string
+  link?: string
+  content: string
+}
+
+export const changelog: ChangelogEntry[] = [
+  { date: '2026-10-08', chapter: '07、08、17 章', content: 'TBI 傷者目標 SBP 調整為 110 mmHg 以上' },
+  { date: '2026-09-16', chapter: '07｜C — 循環與休克', link: '/chapters/07-circulation', content: 'TXA 給藥指引更新至 2026 版單劑方案' },
+  { date: '2026-09-06', chapter: '07｜C — 循環與休克', link: '/chapters/07-circulation', content: '新增戰術 IV 管路建立，含示意圖與示範影片' },
+  { date: '2026-08-21', chapter: '07｜C — 循環與休克', link: '/chapters/07-circulation', content: '修正神經性休克的成因與機轉描述' },
+  { date: '2026-08-16', chapter: '06、14、15 章', content: '新增 BVM 正壓呼吸；PCC 章節全面重整與內容擴充' },
+  { date: '2026-08-15', chapter: '04、05、06 章', content: '新增掃血流程、NPA 禁忌症、R 章檢查程序與 NDC 操作補充' },
+  { date: '2026-07-01', chapter: '03、04 章', content: '修正檢傷 CRT 判斷標準與止血帶轉換適用區域' },
+]
