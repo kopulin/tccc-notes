@@ -136,6 +136,11 @@ const latest = [...changelog].sort((a, b) => b.date.localeCompare(a.date)).slice
       · 物資整備：模組化、庫存管理<br>
       · 個人裝備建議<br>
       · 撤離計劃</td></tr>
+    <tr><td><a href="/tccc-notes/chapters/12-splint-transport.html">12｜S — 固定與搬運</a></td><td>補充搬運方式與擔架：<br>
+      · 四折擔架<br>
+      · 軟擔架<br>
+      · 卷式擔架<br>
+      · 人員編組</td></tr>
     <tr><td>新章節</td><td>WFA 野外緊急醫療與急症</td></tr>
     <tr><td>新章節</td><td>內科急症：腦出血（中風）、主動脈剝離、心肌梗塞</td></tr>
   </tbody>
