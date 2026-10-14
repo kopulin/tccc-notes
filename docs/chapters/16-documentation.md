@@ -43,6 +43,22 @@ tags: [MIST格式, 9-Line, DD1380傷票, 傷情記錄, 戰術通訊]
 
 > **[draft]** 完整欄位說明待補充
 
+**戰鬥代碼（Battle Roster #）撰寫方式**
+
+<table>
+  <colgroup>
+    <col style="width: 50%" />
+    <col style="width: 50%" />
+  </colgroup>
+  <thead>
+    <tr><th>寫法</th><th>範例（Lin, Da Ming / C123456789）</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>英文姓名縮寫兩碼 ＋ 身分證字號後四碼</td><td>LD6789</td></tr>
+    <tr><td>直接寫身分證字號</td><td>C123456789</td></tr>
+  </tbody>
+</table>
+
 ![DD1380 正面](/images/dd1380-form-p1.png)
 
 ![DD1380 背面](/images/dd1380-form-p2.png)
