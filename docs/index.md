@@ -141,6 +141,7 @@ const latest = [...changelog].sort((a, b) => b.date.localeCompare(a.date)).slice
       · 軟擔架<br>
       · 卷式擔架<br>
       · 人員編組</td></tr>
+    <tr><td><a href="/tccc-notes/chapters/18-wound-care.html">18｜傷口照護與敷料選擇</a></td><td>補充傷口照護與簡易縫合</td></tr>
     <tr><td>新章節</td><td>WFA 野外緊急醫療與急症</td></tr>
     <tr><td>新章節</td><td>內科急症：腦出血（中風）、主動脈剝離、心肌梗塞</td></tr>
   </tbody>
