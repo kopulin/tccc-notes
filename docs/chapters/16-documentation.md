@@ -27,9 +27,9 @@ tags: [MIST格式, 9-Line, DD1380傷票, 傷情記錄, 戰術通訊]
     <tr><th>字母</th><th>內容</th></tr>
   </thead>
   <tbody>
-    <tr><td>M</td><td>Mechanism（受傷機轉）</td></tr>
-    <tr><td>I</td><td>Injury（傷情）</td></tr>
-    <tr><td>S</td><td>Signs（生命徵象）</td></tr>
+    <tr><td>M</td><td>Mechanism（受傷機轉）＋受傷時間（如果知道）</td></tr>
+    <tr><td>I</td><td>Injury or illness（傷情或疾病）</td></tr>
+    <tr><td>S</td><td>Symptoms and vital signs（症狀與生命徵象）</td></tr>
     <tr><td>T</td><td>Treatment（已給予的處置）</td></tr>
   </tbody>
 </table>
@@ -64,6 +64,69 @@ tags: [MIST格式, 9-Line, DD1380傷票, 傷情記錄, 戰術通訊]
 </table>
 
 > 上表為戰時版。平時版 Line 6 改報傷病數量與類型（傷病類型、有無嚴重出血、已知血型），Line 9 改報後送點地形描述。
+
+**呼叫要點**
+- 每一項都先清楚講出 Line 編號，例如「Line 1……, Line 2……」
+- 9-Line 報完後，**每一位傷患**再各報一份 MIST
+- 字母、數字依無線電通話規範發音（見下方北約音標字母表）
+- 一段通話以「Over」結尾，表示換對方講
+- 講完後無線電保持開機守聽，等後送單位的進一步指示或聯繫
+
+#### 北約音標字母（NATO Phonetic Alphabet）
+
+<table>
+  <colgroup>
+    <col style="width: 15%" />
+    <col style="width: 35%" />
+    <col style="width: 15%" />
+    <col style="width: 35%" />
+  </colgroup>
+  <thead>
+    <tr><th>字母</th><th>呼號</th><th>字母</th><th>呼號</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>A</td><td>Alfa</td><td>N</td><td>November</td></tr>
+    <tr><td>B</td><td>Bravo</td><td>O</td><td>Oscar</td></tr>
+    <tr><td>C</td><td>Charlie</td><td>P</td><td>Papa</td></tr>
+    <tr><td>D</td><td>Delta</td><td>Q</td><td>Quebec</td></tr>
+    <tr><td>E</td><td>Echo</td><td>R</td><td>Romeo</td></tr>
+    <tr><td>F</td><td>Foxtrot</td><td>S</td><td>Sierra</td></tr>
+    <tr><td>G</td><td>Golf</td><td>T</td><td>Tango</td></tr>
+    <tr><td>H</td><td>Hotel</td><td>U</td><td>Uniform</td></tr>
+    <tr><td>I</td><td>India</td><td>V</td><td>Victor</td></tr>
+    <tr><td>J</td><td>Juliett</td><td>W</td><td>Whiskey</td></tr>
+    <tr><td>K</td><td>Kilo</td><td>X</td><td>X-ray</td></tr>
+    <tr><td>L</td><td>Lima</td><td>Y</td><td>Yankee</td></tr>
+    <tr><td>M</td><td>Mike</td><td>Z</td><td>Zulu</td></tr>
+  </tbody>
+</table>
+
+> 官方拼法為 Alfa、Juliett（非 Alpha、Juliet），避免非英語系使用者念錯。
+
+**數字發音**
+
+<table>
+  <colgroup>
+    <col style="width: 15%" />
+    <col style="width: 35%" />
+    <col style="width: 15%" />
+    <col style="width: 35%" />
+  </colgroup>
+  <thead>
+    <tr><th>數字</th><th>念法</th><th>數字</th><th>念法</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>0</td><td>Zero</td><td>5</td><td>Five（Fife）</td></tr>
+    <tr><td>1</td><td>One（Wun）</td><td>6</td><td>Six</td></tr>
+    <tr><td>2</td><td>Two（Too）</td><td>7</td><td>Seven</td></tr>
+    <tr><td>3</td><td>Three（Tree）</td><td>8</td><td>Eight（Ait）</td></tr>
+    <tr><td>4</td><td>Four（Fow-er）</td><td>9</td><td>Niner</td></tr>
+  </tbody>
+</table>
+
+- 9 念 Niner，避免與德語 nein（no）混淆
+- 數字逐位念，例如座標 1234 念「One Two Three Four」，不念「twelve thirty-four」
+- 小數點念 Decimal
 
 #### DD1380 傷票
 
