@@ -11,7 +11,7 @@ export interface ChangelogEntry {
 export const changelog: ChangelogEntry[] = [
   { date: '2026-10-14', chapter: '11｜W — 傷口管理', link: '/chapters/11-wound', content: '燒傷基本處置新增保鮮膜覆蓋的即造做法' },
   { date: '2026-10-14', chapter: '04｜M — 大量止血控制', link: '/chapters/04-massive-bleeding', content: '新增快速／精確掃血、止血紗布機制比較、填塞與加壓包紮補充、大面積破片傷處理' },
-  { date: '2026-10-14', chapter: '16｜文件記錄', link: '/chapters/16-documentation', content: '新增 DD1380 戰鬥代碼撰寫方式' },
+  { date: '2026-10-14', chapter: '16｜文件記錄', link: '/chapters/16-documentation', content: '新增 DD1380 戰鬥代碼撰寫方式、9-Line 各欄位代碼說明' },
   { date: '2026-10-08', chapter: '07、08、17 章', content: 'TBI 傷者目標 SBP 調整為 110 mmHg 以上' },
   { date: '2026-09-16', chapter: '07｜C — 循環與休克', link: '/chapters/07-circulation', content: 'TXA 給藥指引更新至 2026 版單劑方案' },
   { date: '2026-09-06', chapter: '07｜C — 循環與休克', link: '/chapters/07-circulation', content: '新增戰術 IV 管路建立，含示意圖與示範影片' },
