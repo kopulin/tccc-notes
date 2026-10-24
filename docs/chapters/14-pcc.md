@@ -1,10 +1,10 @@
 ---
 title: PCC — 傷患持續照護
-description: 說明延長傷患照護（PCC）的適用時機，比較 PCC 與 TFC 的差異，並依戰場脈絡、資源分配決策、持續評估監測、傷口感染管理、輸液體液等面向，整理 PCC 階段的照護架構。
+description: 說明延長傷患照護（PCC）的適用時機，比較 PCC 與 TFC 的差異，並依戰場脈絡、資源分配決策、持續評估監測、傷口感染管理、輸液體液、損害控制復甦等面向，整理 PCC 階段的照護架構。
 order: 14
 category: 戰術撤離
 status: published
-tags: [延長傷患照護, 戰術野戰照護, 後送延遲, 持續監測, 資源分配, 感染控制, 脫水評估]
+tags: [延長傷患照護, 戰術野戰照護, 後送延遲, 持續監測, 資源分配, 感染控制, 脫水評估, 損害控制復甦, 限制性復甦, 全血, 步行血庫]
 ---
 
 # PCC — 傷患持續照護
@@ -135,25 +135,361 @@ tags: [延長傷患照護, 戰術野戰照護, 後送延遲, 持續監測, 資�
 
 ---
 
-### 14.8 疼痛與鎮靜管理
+### 14.8 損害控制復甦（DCR）
+
+> 本節由 PCC 讀書會（2026-10-01）整理。每個小節先講**基礎**（必讀），**進階**內容收在摺疊區塊，想深入再展開。
+
+#### 14.8.1 目標：何時開始、打到哪、何時收手
+
+**何時開始輸血**
+
+<table>
+  <colgroup>
+    <col style="width: 33%" />
+    <col style="width: 34%" />
+    <col style="width: 33%" />
+  </colgroup>
+  <thead>
+    <tr><th>TCCC 快篩</th><th>PCC 觸發</th><th>預警</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>無橈動脈脈搏（SBP 可能 &lt; 80–90）<br>排除腦傷後的意識改變</td>
+      <td>SBP &lt; 90 且 HR &gt; 120<br>或<br>SI &gt; 0.9</td>
+      <td>脈搏壓 &lt; 45<br>SBP 看似還有 100，但血管收縮撐高舒張壓，是代償期休克的典型特徵</td>
+    </tr>
+  </tbody>
+</table>
+
+SI（休克指數）算法見 [14.5 持續評估與監測](#_14-5-持續評估與監測)。
+
+**不必等數字掉下來的傷**
+
+<table>
+  <colgroup>
+    <col style="width: 30%" />
+    <col style="width: 70%" />
+  </colgroup>
+  <thead>
+    <tr><th>傷況</th><th>理由</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>軀幹穿透傷</td><td>胸、腹、骨盆。無法有效加壓止血，內部大血管損傷風險極高</td></tr>
+    <tr><td>近端截肢</td><td>肘或膝關節以上，且必須使用止血帶者</td></tr>
+    <tr><td>多處炸傷／高動能槍傷</td><td>組織損傷範圍巨大，迅速誘發凝血病變</td></tr>
+  </tbody>
+</table>
+
+機制與位置顯示致命性出血潛力時，**即使生命徵象暫時穩定，也視為潛在大量輸血傷患**。
+
+**目標血壓（限制性復甦）**
+
+在確實止血之前，只維持「足以灌流大腦的最底線壓力」，不追正常血壓。
+
+<table>
+  <colgroup>
+    <col style="width: 25%" />
+    <col style="width: 20%" />
+    <col style="width: 55%" />
+  </colgroup>
+  <thead>
+    <tr><th>傷況</th><th>目標 SBP</th><th>說明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>單純軀幹穿透傷</td><td>80–90 mmHg</td><td>摸得到橈動脈脈搏；神智清醒、能服從簡單指令</td></tr>
+    <tr><td>創傷性腦損傷（TBI）</td><td>≥ 110 mmHg</td><td>重要例外：腦對低血壓極度敏感，單次 &lt; 90 即顯著增加死亡率</td></tr>
+    <tr><td>燒燙傷</td><td>不適用</td><td>需大量液體補償；毛細血管滲漏，監測尿量</td></tr>
+  </tbody>
+</table>
+
+> 臨床困境：軀幹出血合併嚴重 TBI 時，建議優先保住大腦灌流（SBP 110），並更嚴密監測活動性內出血。
+
+與 [7.4 輸液策略](/chapters/07-circulation#_7-4-輸液策略) 的目標血壓一致。
+
+**復甦終點：什麼時候該收手**
+
+<table>
+  <colgroup>
+    <col style="width: 35%" />
+    <col style="width: 65%" />
+  </colgroup>
+  <thead>
+    <tr><th>指標</th><th>目標</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SBP</td><td>100 mmHg</td></tr>
+    <tr><td>HR</td><td>&lt; 100 bpm</td></tr>
+    <tr><td>SI</td><td>&lt; 1</td></tr>
+    <tr><td>神智</td><td>改善（意識恢復／AVPU）</td></tr>
+    <tr><td>尿量（UOP）</td><td>0.5 mL/kg/h</td></tr>
+  </tbody>
+</table>
+
+TBI 例外：SBP 維持 ≥ 110 mmHg，腦灌注壓優先於預防再出血。
+
+::: details 進階：ABC Score（預測大量輸血）
+
+四項，各 +1 分；**≥ 2 分**高度預測需要大量輸血。
+
+<table>
+  <colgroup>
+    <col style="width: 35%" />
+    <col style="width: 65%" />
+  </colgroup>
+  <thead>
+    <tr><th>項目</th><th>判準</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>穿透性機制</td><td>槍傷、刺傷</td></tr>
+    <tr><td>SBP</td><td>≤ 90 mmHg</td></tr>
+    <tr><td>HR</td><td>≥ 120 bpm</td></tr>
+    <tr><td>FAST 陽性</td><td>POCUS 見腹腔或心包膜積血</td></tr>
+  </tbody>
+</table>
+
+- 大量輸血（MT）：通常定義為 24 小時內輸注超過 10 單位
+- 地下 CCP 的關鍵一分：POCUS 掃 Morrison's pouch 見游離液體 → 是否全力動員步行血庫
+:::
+
+---
+
+#### 14.8.2 種類：用什麼補
+
+**基礎**
+- **全血優先**：有全血就優先用全血，優於單純輸液
+- **晶質液 ≤ 1 L，只當橋樑**：用來等待血品，不能取代輸血（晶質液與全血的比較見 [7.4 輸液策略](/chapters/07-circulation#_7-4-輸液策略)）
+
+::: details 進階：血品的五級優先順序
+
+<table>
+  <colgroup>
+    <col style="width: 12%" />
+    <col style="width: 38%" />
+    <col style="width: 50%" />
+  </colgroup>
+  <thead>
+    <tr><th>等級</th><th>血品</th><th>說明</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Tier 1</td><td>冷儲低效價 O 型全血（LTOWB）</td><td>黃金標準；抗 A／抗 B 效價 &lt; 1:256，可輸給任何血型</td></tr>
+    <tr><td>Tier 2</td><td>預篩低效價 O 型新鮮全血（WBB）</td><td>含活性血小板；需現場採集，耗人力與時間</td></tr>
+    <tr><td>Tier 3</td><td>1:1:1 成分血</td><td>血漿：紅血球：血小板；血小板難在遠端儲存</td></tr>
+    <tr><td>Tier 4</td><td>1:1 血漿 + 紅血球</td><td>缺血小板時的折衷</td></tr>
+    <tr><td>Tier 5</td><td>單一血品（僅 RBC 或僅血漿）</td><td>最後手段：只攜氧會稀釋凝血；只補凝血不能帶氧</td></tr>
+  </tbody>
+</table>
+:::
+
+---
+
+#### 14.8.3 操作：怎麼做
+
+**補鈣**
+- 血袋中的檸檬酸抗凝劑會結合傷患體內的鈣離子，輸血越多越容易低血鈣，影響凝血與心臟收縮
+- 劑量：1 g 氯化鈣（10%）或 3 g 葡萄糖酸鈣
+- 頻率：每 1–2 單位血品補一次（**待確認**，見下方標記）
+
+> **[draft]** 補鈣頻率待確認：本節依讀書會投影片寫「每 1–2 單位」，[14.7 輸液與體液管理](#_14-7-輸液與體液管理) 目前寫「第一單位後，每 4 單位追加」。待對照原始出處（PFC Prolonged Care Ch.5）後統一。
+
+**保溫**
+- 守住「死亡鑽石」：低體溫、酸中毒、凝血病變，再加上低血鈣；別讓晶質液把這幾項推上去
+- 保溫與打包做法見 [14.12 環境控制](#_14-12-環境控制)
+
+::: details 進階：新鮮全血（FWB）與步行血庫
+
+**FWB**（Fresh Whole Blood，新鮮全血）是剛採集、未分離成分的全血，含活性血小板與凝血因子。沒有冷儲全血時，由預先篩選的供體現場採集，也就是**步行血庫**（Walking Blood Bank，WBB）。
+
+**供體篩選：兩階段**
+
+第一階段｜集體問訊（SQ 1–3：快速剔除、排出優先順序）
+
+<table>
+  <colgroup>
+    <col style="width: 10%" />
+    <col style="width: 45%" />
+    <col style="width: 45%" />
+  </colgroup>
+  <thead>
+    <tr><th>編號</th><th>問題</th><th>判定</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SQ1</td><td>願意捐血嗎？</td><td>否 → 排除。必須自願</td></tr>
+    <tr><td>SQ2</td><td>以前捐過血嗎？</td><td>是 → 優先</td></tr>
+    <tr><td>SQ3</td><td>48 小時內服用 Aspirin／NSAIDs？</td><td>抑制血小板 → 排最後</td></tr>
+  </tbody>
+</table>
+
+第二階段｜私密問診（SQ 4–13：一對一、安靜處，排除傳染病風險）
+
+<table>
+  <colgroup>
+    <col style="width: 15%" />
+    <col style="width: 85%" />
+  </colgroup>
+  <thead>
+    <tr><th>編號</th><th>內容</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>SQ4–5</td><td>感冒、發燒、腹瀉、嘔吐？心肺疾病、出血體質？</td></tr>
+    <tr><td>SQ6–8</td><td>一年內輸過血？肝炎、HIV 或同住者感染？曾被拒捐？</td></tr>
+    <tr><td>SQ9–10</td><td>高風險行為、非醫囑針頭注射</td></tr>
+    <tr><td>SQ11</td><td>懷孕或哺乳中？</td></tr>
+    <tr><td>SQ12</td><td>醫療人員親檢：體溫、黃疸、營養、中毒跡象、血管條件</td></tr>
+  </tbody>
+</table>
+
+**採集：五個動作**
+1. **器材**：500 mL 核准採血袋；拔針蓋前先夾管路，防抗凝劑流失
+2. **通道**：止血帶僅阻斷靜脈回流；建議 16G；流速夠快、管路不凝
+3. **混勻**：血袋低於供體手臂；約每分鐘輕搖或翻轉，與 CPDA-1 均勻混合
+4. **容量**：有秤用重量；無秤用 9.5 吋繩索法
+5. **封口**：夾住管線；近血袋連打兩個死結，從死結中間剪斷
+
+關鍵動作：填充過程中定期搖袋，避免袋底形成微小血塊。
+
+**儲存：「新鮮」就是時效**
+- **24 小時內效果最佳**：未用完 → 原則上考慮輸回原供體
+- **8 小時內不打算輸注** → 放入 1–6°C 冷藏。抑制細菌，但血小板功能大幅下降
+- **每一袋都要標註**：供體姓名、血型、採集時間
+- 註：《大型災難血液供應機制》院內採血段落載明「FWB 預計 24 小時內使用者不需冷藏」
+:::
+
+---
+
+#### 14.8.4 注意事項：要盯什麼
+
+**輸血頭 15 分鐘，人守在旁邊**
+
+輸注開始後，醫療人員留在傷患身邊連續觀察。
+
+<table>
+  <colgroup>
+    <col style="width: 50%" />
+    <col style="width: 50%" />
+  </colgroup>
+  <thead>
+    <tr><th>清醒傷患：問</th><th>昏迷傷患：看</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>發冷<br>背痛（急性溶血典型徵兆）<br>呼吸困難<br>起疹子</td>
+      <td>血壓突然下降<br>心率異常加快<br>尿袋暗紅（血紅素尿）</td>
+    </tr>
+  </tbody>
+</table>
+
+懷疑反應 → **立即停止輸血** → 換生理食鹽水管路沖洗。
+
+**過量輸血的代價**：肺水腫、低體溫加劇、寶貴血品的浪費。
+
+::: details 進階：輸血反應的藥物處置
+
+依過敏嚴重度給 Epinephrine 或 Diphenhydramine。劑量待補充。
+:::
+
+---
+
+#### 14.8.5 資源整備與管理
+
+**基礎**
+- 算出缺口，早一點回報、早一點接上體系：地下室不是孤島
+
+::: details 進階：整備（事前）：備血量估算
+
+**公式**：床位數 × 預備床比例 10% × 重傷比例 × 每人預期消耗量 ÷ 每單位 250 mL
+
+<table>
+  <colgroup>
+    <col style="width: 16%" />
+    <col style="width: 28%" />
+    <col style="width: 28%" />
+    <col style="width: 28%" />
+  </colgroup>
+  <thead>
+    <tr><th></th><th>低推估（基本需求）</th><th>高推估（量能許可）</th><th>換到地下 CCP</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>結果</td><td><strong>144 U</strong></td><td><strong>256 U</strong></td><td><strong>36 U</strong></td></tr>
+    <tr><td>算式</td><td>800 × 10% × 30% × 1500 ÷ 250</td><td>800 × 10% × 20% × 4000 ÷ 250</td><td>收容 20 名、30% 重傷 = 6 人<br>6 × 1500 ÷ 250</td></tr>
+    <tr><td>備註</td><td>1500 mL = Class III 出血（70 kg 成人失血 30%）</td><td>4000 mL = 大量輸血（24 小時內置換全身血量）</td><td>庫存遠低於此 → 立即啟動 WBB 或向外協調</td></tr>
+  </tbody>
+</table>
+
+**大醫院靠庫存，地下 CCP 靠流動**
+
+<table>
+  <colgroup>
+    <col style="width: 20%" />
+    <col style="width: 40%" />
+    <col style="width: 40%" />
+  </colgroup>
+  <thead>
+    <tr><th>項目</th><th>大型醫院（靜態儲備）</th><th>地下 CCP（動態儲備）</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>核心目標</td><td>庫存深度與多樣性</td><td>步行血庫（WBB）與精準消耗</td></tr>
+    <tr><td>準備重點</td><td>維持 10 天庫存、建立院內採血流水線</td><td>建立預篩供體名單、配置黃金小時保存盒（GHC）</td></tr>
+    <tr><td>補給觸發</td><td>血液基金會前推部署</td><td>行動觸發線（Action Trigger Line）與 WBB 啟動點</td></tr>
+  </tbody>
+</table>
+
+**災時血液供應：兩個階段**
+
+<table>
+  <colgroup>
+    <col style="width: 50%" />
+    <col style="width: 50%" />
+  </colgroup>
+  <thead>
+    <tr><th>準備階段（目標：極大化現有儲備）</th><th>實施階段（原則：韌性優先、簡化流程）</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>血液基金會庫存目標由 7 天提高到 10 天<br>前推部署：預期動員令發布前 24 小時，血液、空血袋、檢驗試劑預先分散至各重度級急救責任醫院</td>
+      <td>僅採集全血，不再做成分分離（最快、對創傷復甦最有效）<br>檢驗簡化為五項：ABO、Rh、HIV、HCV、HBV，在傳染風險與失血死亡風險之間取得平衡</td>
+    </tr>
+  </tbody>
+</table>
+:::
+
+::: details 進階：管理（事中）：預期管理
+
+**WBB 是最後防線，不是無底洞。**
+
+- 決策觸發點：輸注 2 單位 FWB 後，SBP 仍無法維持 90–100 mmHg，且軀幹傷口無法止血
+- 資源受限下應考慮列為預期的傷情：
+  - 開放性腦外傷，精神狀態評分極低
+  - 嚴重 TBI 伴腦疝跡象（瞳孔散大、Cushing's Triad）
+  - GCS 3–5 且對刺激無反應
+  - 輸血無反應者：軀幹穿透傷，輸兩單位全血後仍惡化
+  - 交界性截肢伴骨盆碎裂
+
+> 不能為了一名存活率極低的傷患，抽乾整個團隊的血液儲備。這不是放棄，是負責任的資源管理。
+:::
+
+**資料來源**：PCC Guide Ch.8；PFC Prolonged Care Ch.5；PJ MED Handbook Ch.7；《大型災難血液供應機制》。
+
+---
+
+### 14.9 疼痛與鎮靜管理
 
 待補充。
 
 ---
 
-### 14.9 營養與排泄照護
+### 14.10 營養與排泄照護
 
 待補充。
 
 ---
 
-### 14.10 心理支持與照護者調度
+### 14.11 心理支持與照護者調度
 
 待補充。
 
 ---
 
-### 14.11 環境控制
+### 14.12 環境控制
 
 **低體溫嚴重程度判斷（無溫度計時）**
 
@@ -190,12 +526,12 @@ tags: [延長傷患照護, 戰術野戰照護, 後送延遲, 持續監測, 資�
 
 ---
 
-### 14.12 文件記錄與交接
+### 14.13 文件記錄與交接
 
 待補充。
 
 ---
 
-### 14.13 撤離準備
+### 14.14 撤離準備
 
 待補充。
